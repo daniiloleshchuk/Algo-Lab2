@@ -6,7 +6,7 @@ def get_input_data(filename):
     with open(filename, 'r') as file:
         s = int(file.readline())
         c = int(file.readline())
-        bst = CustomBST(lambda x: (x.daily_norm, x.greediness))
+        bst = CustomBST(lambda x: (x.daily_norm, x.daily_norm + x.greediness))
         for line in file.readlines():
             val1, val2 = line.split()
             bst.add(Hamster(int(val1), int(val2)))

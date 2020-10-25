@@ -1,14 +1,15 @@
 from IO import get_input_data, write_data
 
-file_name = 'in/hamsters.in3'
+
+file_name = 'in/hamsters.in2'
 
 data = get_input_data(file_name)
-daily_food_suply = data['s']
+daily_food_supply = data['s']
 total_hamsters = data['c']
 hamsters = data['hamsters']
 
 taken_hamsters = 0
-available_daily_supply = daily_food_suply
+available_daily_supply = daily_food_supply
 
 previous_hamster_greediness = 0
 checked_hamsters = 0

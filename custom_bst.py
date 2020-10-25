@@ -80,16 +80,3 @@ class CustomBST:
                 min_element.parent_node.left_child_node = None
             else:
                 self._root_node = None
-
-
-if __name__ == '__main__':
-    bst = CustomBST(lambda x: (x.daily_norm, x.greediness), Hamster(5, 0), Hamster(3, 2), Hamster(1, 4), Hamster(5, 1), Hamster(2, 2))
-    print(bst.get_min_value())
-    #bst.remove_min_element()
-    print(bst.get_min_value())
-    # Hamster(1, 2), Hamster(2, 2), Hamster(3, 1)
-    # Hamster(5, 0), Hamster(2, 2), Hamster(1, 4), Hamster(5, 1)
-    # Hamster(1, 50000), Hamster(1, 60000)
-
-
-
